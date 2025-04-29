@@ -1,0 +1,150 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+#main-visual>img {
+  width: 100%;
+  
+}
+
+/* CSS for PC navigation menu */
+#nav-pc {
+  display: block;
+  text-align: center;
+}
+
+#nav-pc a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#nav-pc a:hover {
+  background-color: #ffffff;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  #nav-pc {
+    display: none;
+  }
+}
+
+/*================
+PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #nav-pc {
+    text-align: right;
+    font-size: 1px;
+    padding-top: 5px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc>a {
+    text-decoration: none;
+    margin-left: 0px;
+  }
+
+  #nav-pc>a:link {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:visited {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+
+  #nav-pc>a:active {
+    color: #0d0d0d;
+  }
+  /* CSS for mobile menu icon */
+#menu-sp {
+  display: none;
+}
+
+  /* ナビゲーションメニュー用ロゴ */
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 769px) {
+  #menu-sp {
+    display: none;
+    position: fixed;
+    top: 150%;
+    left: 50%;
+    transform: translateY(-50%, -50%);
+    z-index: 1000;
+  }
+}
+}
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: black;
+  }
+
+#nav-sp {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+
+#nav-sp ul li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+#nav-sp ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  #nav-sp ul {
+    margin-top: 60px; /* Adjust the margin-top value to match the PC navigation menu */
+  }
+}
+
+
