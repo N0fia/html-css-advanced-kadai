@@ -1,0 +1,178 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+#main-visual>img {
+  width: 100%;
+  
+}
+
+/* CSS for PC navigation menu */
+#nav-pc {
+  display: block;
+  text-align: center;
+}
+
+#nav-pc a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#nav-pc a:hover {
+  background-color: #ffffff;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 770px) {
+  #nav-pc {
+    display: none;
+  }
+}
+
+/*================
+PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #nav-pc {
+    text-align: right;
+    font-size: 1px;
+    padding-top: 5px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc>a {
+    text-decoration: none;
+    margin-left: 0px;
+  }
+
+  #nav-pc>a:link {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:visited {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+
+  #nav-pc>a:active {
+    color: #0d0d0d;
+  }
+  /* CSS for mobile menu icon */
+#menu-sp {
+  display: none;
+}
+#nav-sp nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  #menu-sp {
+    display: none;
+    position: fixed;
+    top: 150%;
+    left: 50%;
+    transform: translateY(-50%, -50%);
+    z-index: 1000;
+  }
+}
+
+}
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: rgb(255, 0, 0);
+  }
+
+#nav-sp {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 153, 0);
+  z-index: 999;
+}
+
+
+
+#nav-sp ul {
+  list-style-type: none;
+}
+
+#nav-sp ul li a {
+  display: block;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-sp nav a {
+    display: block;
+    color: #ffffff;
+  }
+  #nav-sp nav a:hover {
+    text-decoration: underline;
+  }
+
+#nav-sp .menu {
+  text-decoration: none;
+  margin: 100 400px 240 400px;
+  height: 14px;
+  font-size: 15px;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+   /* ×ボタン */
+   #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  #logo-sp {
+    margin: 40px 2 30px 20px;
+  } 
+
+
+
+
+
